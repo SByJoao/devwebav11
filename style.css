@@ -5,7 +5,7 @@
 }
 
 body{
-   
+    
     background-color: #e9e3e3;
     padding-bottom: 1000rem;
 }
@@ -48,20 +48,19 @@ rgba(33, 61, 68, 1) 100%);
     color: #ffc107; 
     font-weight: bold;
 } */
- a{       
+a{       
     border: 1px solid red;
 } 
 
- #text-logo{
+#text-logo{
     position: relative;
     display: block;
     color: #FFF;   
     font-size: 3cap;
-    top:0.9rem;
-    left: 10rem;
+    bottom: 7.5rem;
+    left: 6rem;
     z-index: 3;
     text-decoration: none;
-    height: 40%;
     width: 7rem;
 }
 
@@ -75,9 +74,9 @@ rgba(33, 61, 68, 1) 100%);
     display: block;
     width: 5dvh;
     height: 5dvh;
-    bottom: 1.2rem;
+    bottom: 10.8rem;
     left: 1rem;
-  
+
 }
 
 #logo1{ 
@@ -95,10 +94,10 @@ rgba(33, 61, 68, 1) 100%);
     display: block;
     width: 6dvh;
     height: 6dvh;
-    top: 0.2rem;
-    left: 42.2rem;   
+    bottom: 4.3rem;
+    left: 122rem;   
     z-index: 5;
-   
+
 }
 
 #login1{
@@ -121,7 +120,7 @@ rgba(33, 61, 68, 1) 100%);
     top: 10rem;
     left: 10rem;  
     width: 8rem;
-   
+
 }
 
 .cta-button:hover{
@@ -142,7 +141,7 @@ rgba(33, 61, 68, 1) 100%);
     width: 100%;
     color: #FFF;
     position: fixed;
-   text-align: center;
+    text-align: center;
     bottom: 0; 
     z-index: 6;
 }
@@ -161,47 +160,48 @@ rgba(33, 61, 68, 1) 100%);
     text-decoration: underline; 
 } 
 /* Footer - Fim*/
-  
+
 
 /* Estilo Geral */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .navbar { 
-  background: linear-gradient(rgba(83, 153, 170, 1) 0%, 
+background: linear-gradient(rgba(83, 153, 170, 1) 0%, 
 rgba(64, 119, 132, 1) 50%, 
 rgba(33, 61, 68, 1) 100%); 
-width: 100%;
-display: flex;
-position: fixed;
-justify-content: center;  
-  padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
 }
 
 .navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* Alinha os itens na horizontal */
-  justify-content: flex-start; /* Alinha à esquerda */
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex; /* Alinha os itens na horizontal */
+    justify-content: flex-start; /* Alinha à esquerda */
+    
 }
 
 .navbar li {
-  margin: 0 15px; /* Espaço entre os links */
+    margin: 0 15px; /* Espaço entre os links */
+    
 }
 
 .navbar a {
   text-decoration: none; /* Remove o sublinhado */
-  color: white;
-  padding: 5px 10px; /* Define espaçamento interno */
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Animações suaves */
+    color: white;
+    padding: 5px 10px; /* Define espaçamento interno */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animações suaves */
 }
 
 /* Apenas o link sob o mouse é movido */
 .navbar a:hover {
-  transform: translateY(-5px); /* Move o link para cima */
-  background-color: #ffc107; /* Cor de fundo para destaque */
-  border-radius: 5px; /* Adiciona arredondamento */
+    transform: translateY(-5px); /* Move o link para cima */
+    background-color: #ffc107; /* Cor de fundo para destaque */
+    border-radius: 5px; /* Adiciona arredondamento */
 }
