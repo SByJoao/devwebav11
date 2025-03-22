@@ -1,70 +1,88 @@
  * {
     padding: 0;
     margin: 0; 
+    
     font-family: 'Roboto', sans-serif;  
 }
 
 body{
    
     background-color: #e9e3e3;
-    padding-bottom: 1000rem;
+    padding-bottom: 0;
+}
+
+section {
+    display: none; /* Esconde todas as seções inicialmente */
+    padding: 20px;
+}
+section.active {
+    display: block; /* Mostra a seção ativa */
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-/* NavBar - Inicio */
-/* nav{
-    background: linear-gradient(rgba(83, 153, 170, 1) 0%, 
-rgba(64, 119, 132, 1) 50%, 
-rgba(33, 61, 68, 1) 100%);
-    height: 8dvh;    
-    width: 100%;    
-    display: flex;
-    position: fixed;
-    justify-content: center;    
-    gap: 5dvh;
-    z-index: 1;
-}
-
-.nav-link{
-    position: relative;
-    display: block;   
-    text-decoration: none;
-    height: 50%;
-    font-size: 2.5cap;    
-    top: 2.0dvh;
-    left: 40dvh;
-    z-index: 2;   
-    color: #FFF;  
-    
-}
-
-.nav-link:hover {
-    font-weight: bold;
-    color: #ffc107; 
-}
-
-.nav-link.active {
-    color: #ffc107; 
-    font-weight: bold;
-} */
- a{       
+/* 
+ a, p{       
     border: 1px solid red;
-} 
+}  */
+
+  .navbar { 
+    background: linear-gradient(rgba(83, 153, 170, 1) 0%, 
+  rgba(64, 119, 132, 1) 50%, 
+  rgba(33, 61, 68, 1) 100%); 
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: center;  
+    padding: 10px 20px;
+    height: 3%;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinha os itens na horizontal */
+    justify-content: flex-start; /* Alinha à esquerda */
+  }
+  
+  .navbar li {
+    margin: 0 15px; /* Espaço entre os links */
+  }
+  
+  .navbar a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white;
+    padding: 5px 10px; /* Define espaçamento interno */
+    transition: transform 0.3s ease-in, background-color 0.3s ease; /* Animações suaves */
+  }
+  
+  /* Apenas o link sob o mouse é movido */
+  .navbar #nav-link{   
+    position: relative;
+    display: block;
+    font-size: 1.5cap; 
+    left:15rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#nav-link:hover {
+    font-weight: bold;
+    background-color: #ffc107; /* Cor de fundo para destaque */
+}
 
  #text-logo{
     position: relative;
     display: block;
     color: #FFF;   
-    font-size: 3cap;
-    top:0.9rem;
-    left: 10rem;
+    font-size:2.5cap;
+    bottom: 0.7rem;      
+    right: 64rem;
     z-index: 3;
     text-decoration: none;
-    height: 40%;
-    width: 7rem;
+    width: 5rem;
 }
-
+ 
 #text-logo:hover{
     font-weight: bold;
     color: #FFC107;
@@ -73,42 +91,41 @@ rgba(33, 61, 68, 1) 100%);
 #logo{    
     position: relative;
     display: block;
-    width: 5dvh;
-    height: 5dvh;
-    bottom: 1.2rem;
-    left: 1rem;
-  
+    width: 4dvh;
+    height: 4dvh;
+   bottom: 1rem;
+    right: 76rem;
 }
 
 #logo1{ 
-    width: 5dvh;
-    height: 5dvh;  
+    width: 4dvh;
+    height: 4dvh;  
 } 
 
 #logo1:hover{
-    width: 6.2dvh;
-    height: 6.2dvh;
+    width: 4.2dvh;
+    height: 4.2dvh;
 }
 
 #login{
     position: relative;
     display: block;
-    width: 6dvh;
-    height: 6dvh;
-    top: 0.2rem;
-    left: 42.2rem;   
+    width: 4dvh;
+    height: 4dvh;
+    top: -0.9rem;
+    left: 41.2rem;   
+    
     z-index: 5;
-   
 }
 
 #login1{
-    width: 6dvh;
-    height: 6dvh;    
+    width: 4dvh;
+    height: 4dvh;    
 }
 
 #login1:hover{
-    width: 6.2dvh;
-    height: 6.2dvh;
+    width: 4.2dvh;
+    height: 4.2dvh;
 }
 
 .cta-button{
@@ -118,17 +135,16 @@ rgba(33, 61, 68, 1) 100%);
     position: relative;
     display: block;
     transition: 0.5s ease; 
-    top: 10rem;
-    left: 10rem;  
-    width: 8rem;
+    bottom: 0.5rem;
+    left: 43rem;  
+    width: 7.8rem;
+    justify-content: center;
    
 }
 
 .cta-button:hover{
     font-weight: bold;
-    transform: translateY(-5px);
-    background-color: #ffc107; 
-    border-radius: 5px;
+    color: #ffc107; 
 }
 /* NavBar - Fim */
 
@@ -141,67 +157,47 @@ rgba(64, 119, 132, 1) 50%,
 rgba(33, 61, 68, 1) 100%);
     width: 100%;
     color: #FFF;
-    position: fixed;
-   text-align: center;
+    position:static;
+    text-align: center;
     bottom: 0; 
     z-index: 6;
 }
 
-.footer-content p {
-    margin: 0.1dvh 0;
+.footer p {
+    font-weight: bold;
+    top: 1.2rem;
+    width: 8%;
+    position: relative;
+    justify-self:center;
 }
 
 .social-links a {
     color: #ffffff;
+    text-decoration: none;   
+}
+.social-links a:hover {
     text-decoration: none;
-    font-weight: bold;
+} 
+
+#social-links { 
+    position: relative;  
+    display: inline-block;
+    bottom: 0.5rem;       
+    right: 47rem;
+    height: 1.8rem;
+    transition: all 0.25s ease-in-out;
 }
 
-.social-links a:hover {
-    text-decoration: underline; 
-} 
+ #social-links1 { 
+    width: 2rem;
+    height: 2rem;    
+    transition: all 0.25s ease-in-out;
+}
+
+#social-links1:hover{
+    width: 2.2rem;
+    height: 2.2rem;    
+}
 /* Footer - Fim*/
   
 
-/* Estilo Geral */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.navbar { 
-  background: linear-gradient(rgba(83, 153, 170, 1) 0%, 
-rgba(64, 119, 132, 1) 50%, 
-rgba(33, 61, 68, 1) 100%); 
-width: 100%;
-display: flex;
-position: fixed;
-justify-content: center;  
-  padding: 10px 20px;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* Alinha os itens na horizontal */
-  justify-content: flex-start; /* Alinha à esquerda */
-}
-
-.navbar li {
-  margin: 0 15px; /* Espaço entre os links */
-}
-
-.navbar a {
-  text-decoration: none; /* Remove o sublinhado */
-  color: white;
-  padding: 5px 10px; /* Define espaçamento interno */
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Animações suaves */
-}
-
-/* Apenas o link sob o mouse é movido */
-.navbar a:hover {
-  transform: translateY(-5px); /* Move o link para cima */
-  background-color: #ffc107; /* Cor de fundo para destaque */
-  border-radius: 5px; /* Adiciona arredondamento */
-}

@@ -4,30 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
-    <script src="app.js" defer></script>       
+    <script src="app.js" defer></script>      
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>+Saber</title>
 </head>
 <body>
-    <div id="navbar-placeholder"></div>
+    <header>  
+        <nav class="navbar">
+            <ul>                       
+            <li><a href="#" id="nav-link" data-target="home">Início</a></li> 
+            <li><a href="#" id="nav-link" data-target="aula">Aulas</a></li> 
+            <li><a href="#" id="nav-link" data-target="livro">livros</a></li> 
+            <li><a href="#" id="nav-link" data-target="sobre">Sobre</a></li>                
+            <li><a href="#" class="cta-button" data-target="cads">Cadastra-se</a></li>   
+            <li><a href="#" id="login" data-target="login2"><img id="login1" src="/img/login.png" alt="Avatar de login"></a></li>   
+            <li><a href="#" id="text-logo" data-target="home">+Saber</a> </li>    
+            <li><a href="#" id="logo" data-target="home"><img id="logo1" src="/img/logo.png" alt="Um caderno e um capelo"></a> </li>                                
+            </ul>                 
+        </nav>          
+        </header>
 
-    <!-- <main class="hero">
-        <section class="hero-main-img">
+<main>
+        <section id ="home" class="active">
             <img class="img-criança-livro" src="/img/criança lendo livro.png" alt="Criança lendo um livro" >
             <a class="hero-cta" href="">Saiba Mais </a>
-        </section> -->
 
-        <!-- <aside class="hero-text">
-            <h2>+Saber é 100% gratuito!</h2>
-            <p>O +Saber é uma plataforma inovadora de estudos que oferece video aulas e materias didáticos gratuitos, ajudando estudantes seus conhecimentos de maneira acessivel e dinâmica</p>
-        </aside>
-        
-        <section class="hero-img">
+            <aside class="hero-text">
+                <h2>+Saber é 100% gratuito!</h2>
+                <p>O +Saber é uma plataforma inovadora de estudos que oferece video aulas e materias didáticos gratuitos, ajudando estudantes seus conhecimentos de maneira acessivel e dinâmica</p>
+            </aside>
+
             <img class="livro-img" src="/img/livro.png" alt="livro" width="100px" height="100px">
             <img class="play-img" src="/img/botao-play.png" alt="botão de play" width="100px" height="100px">
             <img class="diplomado-img" src="/img/diplomado.png" alt="diplomado" width="100px" height="100px">
-        </section> -->
-    <!-- </main> -->
-
-    <div id="footer-placeholder"></div>
+        </section>
+        <section id ="aula">
+            <h1>Bem-vindo ao nosso site!</h1>
+            <p>Esta é a página A.</p>
+        </section>
+        <section id ="livro">
+            <h1>Bem-vindo ao nosso site!</h1>
+            <p>Esta é a página L.</p>
+        </section>
+        <section id ="sobre">
+            <h1>Bem-vindo ao nosso site!</h1>
+            <p>Esta é a página S.</p>
+        </section>
+        <section id ="cads">
+            <h1>Bem-vindo ao nosso site!</h1>
+            <p>Esta é a página C.</p>
+        </section>
+        <section id ="login2">
+            <h1>Bem-vindo ao nosso site!</h1>
+            <p>Esta é a página lg</p>
+        </section>
+        
+</main>
+    <footer class="footer">       
+        <p>&copy; 2025 - +Saber</p> 
+            <a  href="https://www.facebook.com/" target="_blank" id="social-links"><img id="social-links1" src="/img/fb.png" alt="Logo do facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank" id="social-links"><img id="social-links1" src="/img/insta.png" alt="Logo do Instagram"></a>
+            <a href="https://x.com/" target="_blank" id="social-links"><img id="social-links1" src="/img/x.png" alt="Logo do X"></a>
+            <a href="https://www.linkedin.com/" target="_blank" id="social-links"><img id="social-links1" src="/img/likd.png" alt="Logo do linkedin"></a>  
+</footer>
 </body>
 </html>
