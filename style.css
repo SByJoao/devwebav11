@@ -6,7 +6,11 @@
 }
 
 body{
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> b7daaedc9371f84c6e52f6702572e41a0a380e4d
     background-color: #e9e3e3;
     padding-bottom: 0;
 }
@@ -72,16 +76,36 @@ rgba(33, 61, 68, 1) 100%);
     background-color: #ffc107; /* Cor de fundo para destaque */
 }
 
+<<<<<<< HEAD
+=======
+.nav-link.active {
+    color: #ffc107; 
+    font-weight: bold;
+} */
+a{       
+    border: 1px solid red;
+} 
+
+>>>>>>> b7daaedc9371f84c6e52f6702572e41a0a380e4d
 #text-logo{
     position: relative;
     display: block;
     color: #FFF;   
+<<<<<<< HEAD
     font-size:2.5cap;
     bottom: 0.7rem;      
     right: 64rem;
     z-index: 3;
     text-decoration: none;
     width: 5rem;
+=======
+    font-size: 3cap;
+    bottom: 7.5rem;
+    left: 6rem;
+    z-index: 3;
+    text-decoration: none;
+    width: 7rem;
+>>>>>>> b7daaedc9371f84c6e52f6702572e41a0a380e4d
 }
 
 #text-logo:hover{
@@ -92,9 +116,17 @@ rgba(33, 61, 68, 1) 100%);
 #logo{    
     position: relative;
     display: block;
+<<<<<<< HEAD
     
     bottom: 1rem;
     right: 76rem;
+=======
+    width: 5dvh;
+    height: 5dvh;
+    bottom: 10.8rem;
+    left: 1rem;
+
+>>>>>>> b7daaedc9371f84c6e52f6702572e41a0a380e4d
 }
 
 #logo1{ 
@@ -110,12 +142,21 @@ rgba(33, 61, 68, 1) 100%);
 #login{
     position: relative;
     display: block;
+<<<<<<< HEAD
     width: 4dvh;
     height: 4dvh;
     top: -0.9rem;
     left: 41.2rem;   
     
     z-index: 5;
+=======
+    width: 6dvh;
+    height: 6dvh;
+    bottom: 4.3rem;
+    left: 122rem;   
+    z-index: 5;
+
+>>>>>>> b7daaedc9371f84c6e52f6702572e41a0a380e4d
 }
 
 #login1{
@@ -135,10 +176,17 @@ rgba(33, 61, 68, 1) 100%);
     position: relative;
     display: block;
     transition: 0.5s ease; 
+<<<<<<< HEAD
     bottom: 0.5rem;
     left: 43rem;  
     width: 7.8rem;
     justify-content: center;
+=======
+    top: 10rem;
+    left: 10rem;  
+    width: 8rem;
+
+>>>>>>> b7daaedc9371f84c6e52f6702572e41a0a380e4d
 }
 
 .cta-button:hover{
@@ -156,7 +204,11 @@ rgba(64, 119, 132, 1) 50%,
 rgba(33, 61, 68, 1) 100%);
     width: 100%;
     color: #FFF;
+<<<<<<< HEAD
     position:static;
+=======
+    position: fixed;
+>>>>>>> b7daaedc9371f84c6e52f6702572e41a0a380e4d
     text-align: center;
     bottom: 0; 
     z-index: 6;
@@ -198,6 +250,7 @@ rgba(33, 61, 68, 1) 100%);
     height: 2.2rem;    
 }
 /* Footer - Fim*/
+<<<<<<< HEAD
 
 /* main - Início */
 
@@ -241,3 +294,50 @@ rgba(33, 61, 68, 1) 100%);
 /* login e cadastro - Início */
 
 
+=======
+
+
+/* Estilo Geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar { 
+background: linear-gradient(rgba(83, 153, 170, 1) 0%, 
+rgba(64, 119, 132, 1) 50%, 
+rgba(33, 61, 68, 1) 100%); 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex; /* Alinha os itens na horizontal */
+    justify-content: flex-start; /* Alinha à esquerda */
+    
+}
+
+.navbar li {
+    margin: 0 15px; /* Espaço entre os links */
+    
+}
+
+.navbar a {
+  text-decoration: none; /* Remove o sublinhado */
+    color: white;
+    padding: 5px 10px; /* Define espaçamento interno */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animações suaves */
+}
+
+/* Apenas o link sob o mouse é movido */
+.navbar a:hover {
+    transform: translateY(-5px); /* Move o link para cima */
+    background-color: #ffc107; /* Cor de fundo para destaque */
+    border-radius: 5px; /* Adiciona arredondamento */
+}
+>>>>>>> b7daaedc9371f84c6e52f6702572e41a0a380e4d
