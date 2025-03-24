@@ -16,10 +16,10 @@
 
             document.getElementById(target).classList.add('active');
 
-        history.pushState(null, '', target);
+        // history.pushState(null, '', target);
 
 
         sections.forEach(section => section.style.display = 'none');
-        document.getElementById(target).style.display = 'block';
+        document.getElementById(target).style.display = 'block'; 
         });
     });
